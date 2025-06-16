@@ -29,9 +29,9 @@ After running an experiment, you can evaluate the predictions using the evaluati
 cd evaluation
 python evaluate.py -e EXPERIMENT_TYPE -p PREDICTED_FILE -g GROUND_FILE
 ```
-- e, --experiment: exp1, exp2, or exp3 (evaluation type)
-- p, --predicted-file: Path to the predicted CSV file
-- g, --ground-file: Path to the ground truth JSON file
+- -e exp1, exp2, or exp3 (evaluation type)
+- -p Path to the predicted CSV file
+- -g Path to the ground truth JSON file
 
 | Experiment | Description                                                 |
 | ---------- | ----------------------------------------------------------- |
