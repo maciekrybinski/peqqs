@@ -6,7 +6,20 @@ Question Answering (QA) and Information Retrieval (IR) play a crucial role in in
 In this work, we focus on a specific version of such pipeline, where users aim to obtain a specific quantity as an extractive answer (e.g., a value of a particular measurable parameter). To this end, we provide a dataset of 1031 agricultural sciences abstracts annotated with correct extractive answers. Additionally, this dataset builds on our previous work, which focused on quantity-centric search from a corpus of over 3.3M documents, which means the dataset also consists of 1130 query-document relevance judgments for 39 queries. The availability of both document-level annotations and corpus-level relevance judgments means that our dataset allows for an end-to-end evaluation of an information-seeking pipeline consisting of both literature search and the QA module. We present how our dataset can be used both for the evaluation of extractive quantity-focused QA from science literature and for exploring the impact of search on the downstream results, specifically focusing on hallucinations resulting from processing irrelevant documents with LLMs.
 
 # CODE
-The code for the example experiments on the dataset is included in the C
+The code for the example experiments on the dataset is included in the experiment directory. To run the experiment, first install all requirements from requirements.txt.
+
+```
+pip install -r requirements.txt
+```
+Then, navigate to the experiment directory and run script:
+```
+cd experiment
+python exp.py --model_name model_name --exp_num exp_num
+```
+Replace model_name and exp_num with desired large language model name and experiment number respectively. \
+The code has been tested on Python 3.12.
+
+
 
 # DATA
 Datafiles in this repository include:

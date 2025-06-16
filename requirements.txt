@@ -1,0 +1,7 @@
+pandas
+sentencepiece
+torch==2.7.0
+transformers==4.52.4
+vllm
+langchain==0.3.25
+langchain_community==0.3.24
